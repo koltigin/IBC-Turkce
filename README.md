@@ -2,33 +2,33 @@
 
 ![banner](./assets/interchain-standards-image.jpg)
 
-## Synopsis
+## Sinopsis
 
-This repository is the canonical location for development and documentation of the inter-blockchain communication protocol (IBC).
+Bu depo, blok zincirler arası iletişim protokolünün (IBC) geliştirilmesi ve belgelenmesi için bir standarttır.
 
-It shall be used to consolidate design rationale, protocol semantics, and encoding descriptions for IBC, including both the core transport, authentication, & ordering layer (IBC/TAO) and the application layers describing packet encoding & processing semantics (IBC/APP).
+Hem çekirdek aktarım, kimlik doğrulama ve sipariş katmanı (IBC/TAO) hem de paket kodlama ve işleme anlambilimini (IBC/APP) açıklayan uygulama katmanları dahil olmak üzere, tasarım mantığı, protokol semantiği ve IBC için kodlama açıklamalarını birleştirmek için kullanılacaktır.
 
-Contributions are welcome. See [CONTRIBUTING.md](meta/CONTRIBUTING.md) for contribution guidelines.
+Katkılar memnuniyetle karşılanmaktadır. Katkı yönergeleri için [CONTRIBUTING.md](meta/CONTRIBUTING.md) bölümüne bakınız.
 
-See [ROADMAP.md](meta/ROADMAP.md) for a public up-to-date version of our roadmap.
+Yol haritamızın herkese açık güncel sürümü için [ROADMAP.md](meta/ROADMAP.md) adresine bakınız.
 
-## What is IBC?
+## IBC Nedir?
 
-For a high-level explanation of what IBC is and how it works, please read [this blog post](https://blog.cosmos.network/eli5-what-is-ibc-a212f518715f).
+IBC'nin ne olduğuna ve nasıl çalıştığına ilişkin ayrıntılı bir açıklama için lütfen [bu blog gönderisini](https://blog.cosmos.network/eli5-what-is-ibc-a212f518715f) okuyunuz.
 
-## Interchain Standards
+## Zincirler Arası Standartlar (Interchain Standards)
 
-All standards at or past the "Draft" stage are listed here in order of their ICS numbers, sorted by category.
+"Taslak" aşamasındaki veya bundan sonraki tüm standartlar, kategoriye göre sıralanmış ICS numaralarına göre burada listelenir.
 
 ### Meta
 
-| Interchain Standard Number               | Standard Title             | Stage |
+| Zincirler Arası Standart Numarası               | Standart Başlığı             | Aşama |
 | ---------------------------------------- | -------------------------- | ----- |
 | [1](spec/ics-001-ics-standard/README.md) | ICS Specification Standard | N/A   |
 
 ### Core
 
-| Interchain Standard Number                                    | Standard Title             | Stage     | Implementations |
+| Zincirler Arası Standart Numarası                             | Standart Başlığı           | Aşama     | Uygulamalar |
 | ------------------------------------------------------------- | -------------------------- | --------- | --------------- |
 | [2](spec/core/ics-002-client-semantics/README.md)             | Client Semantics           | Candidate | [ibc-go](https://github.com/cosmos/ibc-go) |
 | [3](spec/core/ics-003-connection-semantics/README.md)         | Connection Semantics       | Candidate | [ibc-go](https://github.com/cosmos/ibc-go) |
@@ -41,7 +41,7 @@ All standards at or past the "Draft" stage are listed here in order of their ICS
 
 ### Client
 
-| Interchain Standard Number                                      | Standard Title             | Stage | Implementations |
+| Zincirler Arası Standart Numarası                               | Standart Başlığı           | Aşama | Uygulamalar |
 | --------------------------------------------------------------- | -------------------------- | ----- | --------------- |
 | [6](spec/client/ics-006-solo-machine-client/README.md)          | Solo Machine Client        | Candidate | [ibc-go](https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/06-solomachine) |
 | [7](spec/client/ics-007-tendermint-client/README.md)            | Tendermint Client          | Candidate | [ibc-go](https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/07-tendermint) |
@@ -51,13 +51,13 @@ All standards at or past the "Draft" stage are listed here in order of their ICS
 
 ### Relayer
 
-| Interchain Standard Number                                       | Standard Title             | Stage | Implementations |
+| Zincirler Arası Standart Numarası                                | Standart Başlığı           | Aşama | Uygulamalar |
 | ---------------------------------------------------------------- | -------------------------- | ----- | --------------- |
 | [18](spec/relayer/ics-018-relayer-algorithms/README.md)          | Relayer Algorithms         | Finalised | [go-relayer](https://github.com/cosmos/relayer), [rust-relayer](https://github.com/informalsystems/ibc-rs), [ts-relayer](https://github.com/confio/ts-relayer) |
 
 ### App
 
-| Interchain Standard Number                               | Standard Title          | Stage | Implementations |
+| Zincirler Arası Standart Numarası                        | Standart Başlığı        | Aşama | Uygulamalar |
 | -------------------------------------------------------- | ----------------------- | ----- | --------------- |
 | [20](spec/app/ics-020-fungible-token-transfer/README.md) | Fungible Token Transfer | Candidate | [ibc-go](https://github.com/cosmos/ibc-go/tree/main/modules/apps/transfer) |
 | [27](spec/app/ics-027-interchain-accounts/README.md)     | Interchain Accounts     | Candidate | [ibc-go](https://github.com/cosmos/ibc-go/tree/main/modules/apps/27-interchain-accounts) |
